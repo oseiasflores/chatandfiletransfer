@@ -1,2 +1,2 @@
 # chatandfiletransfer
-An chat and a file transfer program, devoleped for educational propouses. Implemented in python.
+Um programa de mensagens e transferencia de arquivos via terminal. Desenvolvido para fins academicos. 
