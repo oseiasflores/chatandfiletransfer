@@ -2,8 +2,12 @@ import socket
 import threading
 
 # Definindo ip do servidor e porta
-host = '127.0.0.1'
-port = 5182
+host= input('Digite o ip do servidor: ')
+port = int(input('Digite a porta do: '))
+print('')
+print('Informações de conexão:')
+print("Porta do servidor: ",port)
+print("IP do servidor: ",host)
 
 # Inicializando o servidor
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
