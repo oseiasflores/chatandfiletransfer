@@ -1,6 +1,14 @@
 import socket
 import threading
 
+# Definindo ip do servidor e porta
+host= input('Digite o ip do servidor: ')
+port = int(input('Digite a porta do: '))
+print('')
+print('Informações de conexão:')
+print("Porta do servidor: ",port)
+print("IP do servidor: ",host)
+print('')
 # Escolhendo um nome de usuário
 print(" ")
 print("Seja Bem vindo!!!")
@@ -9,7 +17,7 @@ nickname = input("Qual seria seu Usuario: ")
 
 # Conectando ao servidor
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(('127.0.0.1', 5182))
+client.connect((host, port))
 
 # Ouvindo o Servidor e Enviando o Apelido
 def receive():
